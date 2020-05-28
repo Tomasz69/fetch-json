@@ -24,7 +24,7 @@ or from the [jsdelivr.com CDN](https://www.jsdelivr.com/package/npm/fetch-json):
 ### node
 Install package:
 ```shell
-$ npm install node-fetch fetch-json
+$ npm install node-fetch fetch
 ```
 and then import:
 ```javascript
@@ -59,7 +59,7 @@ For more examples, see the Mocha specification cases:<br>
 To see a website that incorporates **fetch-json**, check out DataDashboard:<br>
 [https://data-dashboard.js.org](https://data-dashboard.js.org)
 
-## 3) Leverages the Fetch API and node-fetch
+## 3) Leverages the Fetch API and node
 **fetch-json** calls the native
 **[Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)**
 if in a web browser and calls
@@ -74,10 +74,10 @@ const resource = { name: 'Jupiter', position: 5 };
 const options = {
    method: 'POST',
    headers: {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'
+      'Content-Type': 'application
+      'Accept': 'application
       },
-   body: JSON.stringify(resource)
+   body: JSON.stringify
    };
 const handleData = (data) =>
    console.log(data);  //http response body as an object literal
@@ -106,23 +106,23 @@ client".
 The format for using **fetch-json** is:
 #### GET
 ```javascript
-fetchJson.get(url, params, options).then(callback);
+fetchJson.get(url, params, options).then(call);
 ```
 #### POST
 ```javascript
-fetchJson.post(url, resource, options).then(callback);
+fetchJson.post(url, resource, options).then(call);
 ```
 #### PUT
 ```javascript
-fetchJson.put(url, resource, options).then(callback);
+fetchJson.put(url, resource, options).then(call);
 ```
 #### PATCH
 ```javascript
-fetchJson.patch(url, resource, options).then(callback);
+fetchJson.patch(url, resource, options).then(call);
 ```
 #### DELETE
 ```javascript
-fetchJson.delete(url, resource, options).then(callback);
+fetchJson.delete(url, resource, options).then(call);
 ```
 Notes:
 1. Only the `url` parameter is required.&nbsp; The other parameters are optional.
@@ -193,7 +193,5 @@ JSDOM does not include `fetch`, so you need to add a polyfill (see usage of `wha
 ## 8) Questions or enhancements
 Feel free to submit an [issue](https://github.com/center-key/fetch-json/issues).
 
-_"Stop trying to make fetch happen without [#fetchJson](https://twitter.com/hashtag/fetchJson)!"_
+_" trying to make fetch happen without [#fetchJson](https://twitter.com/hashtag/fetchJson)!"_
 
----
-[MIT License](LICENSE.txt)
